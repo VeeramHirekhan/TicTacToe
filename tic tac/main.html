@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tic tac toe</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+</head>
+
+<body>
+    <!-- this-took-me-way-longer-than-it-should-have.html-->
+    <div class="tictactoe">
+        <div id="firstMove">
+            <div class="turn">
+                <h1 style="width:300px;"></h1>
+                <button style="height:100px;width:200px; margin-top:200px; margin-left:25px" id="restart">Start/Restart</button>
+                <form>
+                  <input type="radio" name="game" value="AL" checked="checked" style="margin-left:25px;"> You vs AI<br>
+                  <input type="radio" name="game" value="Enemey" onclick="yourTurnPlayer()"  style="margin-left:25px;"> You vs Enemy<br>
+                </form>
+                <span id="minutes"  style="margin-left:25px;"></span>:<span id="seconds" ></span>
+            </div>
+        </div>
+        <div class="board">
+            <table>
+                <tr>
+                    <td id="c1"></td>
+                    <td id="c2"></td>
+                    <td id="c3"></td>
+                </tr>
+                <tr>
+                    <td id="c4"></td>
+                    <td id="c5"></td>
+                    <td id="c6"></td>
+                </tr>
+                <tr>
+                    <td id="c7"></td>
+                    <td id="c8"></td>
+                    <td id="c9"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="scoreboard">
+            <div class="OpponentScore-Container">
+            <h1 id="OpponentScore">Oppoenet Score:</h1>
+            </div>
+            <div class="yourScore-container">
+            <h1 id="yourScore">Your Score:</h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
